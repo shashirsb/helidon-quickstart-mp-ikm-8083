@@ -6,7 +6,7 @@ if(getCookie("sessionUUid") != null && getCookie("userId") != null && getCookie(
 
 	var request;
 	request = $.ajax({
-		url: "http://152.70.192.169:8083/user/getUsers",
+		url: "http://141.148.33.87:8080/user/getUsers",
 		type: "GET",
 		async: false,
 		dataType: "json",
