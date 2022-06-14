@@ -6,7 +6,7 @@ if(getCookie("sessionUUid") != null && getCookie("userId") != null && getCookie(
 
 	var request;
 	request = $.ajax({
-		url: "http://141.148.33.87:8080/user/getUsers",
+		url: "http://150.136.116.225:30994/user/getUsers",
 		type: "GET",
 		async: false,
 		dataType: "json",
@@ -41,7 +41,7 @@ if(getCookie("sessionUUid") != null && getCookie("userId") != null && getCookie(
 	});
 	} else {
 		alert("Invalid Session - Kindly Login");
-		window.location.href = "http://152.70.192.169:8080/login.html";
+		window.location.href = "http://150.136.116.225:30996/login.html";
 	}
 
 }

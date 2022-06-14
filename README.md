@@ -13,32 +13,32 @@ java -jar target/helidon-quickstart-mp-ikm-8029.jar
 ## Exercise the application
 
 ```
-curl -X GET http://152.70.192.169:8080/greet
+curl -X GET http://150.136.116.225:30996/greet
 {"message":"Hello World!"}
 
-curl -X GET http://152.70.192.169:8080/greet/Joe
+curl -X GET http://150.136.116.225:30996/greet/Joe
 {"message":"Hello Joe!"}
 
-curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://152.70.192.169:8080/greet/greeting
+curl -X PUT -H "Content-Type: application/json" -d '{"greeting" : "Hola"}' http://150.136.116.225:30996/greet/greeting
 
-curl -X GET http://152.70.192.169:8080/greet/Jose
+curl -X GET http://150.136.116.225:30996/greet/Jose
 {"message":"Hola Jose!"}
 ```
 
 ## Try health and metrics
 
 ```
-curl -s -X GET http://152.70.192.169:8080/health
+curl -s -X GET http://150.136.116.225:30996/health
 {"outcome":"UP",...
 . . .
 
 # Prometheus Format
-curl -s -X GET http://152.70.192.169:8080/metrics
+curl -s -X GET http://150.136.116.225:30996/metrics
 # TYPE base:gc_g1_young_generation_count gauge
 . . .
 
 # JSON Format
-curl -H 'Accept: application/json' -X GET http://152.70.192.169:8080/metrics
+curl -H 'Accept: application/json' -X GET http://150.136.116.225:30996/metrics
 {"base":...
 . . .
 

@@ -110,7 +110,7 @@ public class UserList {
 	  	@Path("/openUserList")
 	    @GET
 	    @Produces(MediaType.TEXT_HTML)
-	 	@CrossOrigin(value = {"http://129.159.104.70:8080/","http://152.70.192.169:8080/"},
+	 	@CrossOrigin(value = {"http://150.136.116.225:30998/","http://150.136.116.225:30996/"},
        allowMethods = {HttpMethod.POST,HttpMethod.GET})
 	    public  Response validateSession(@QueryParam("trackId") String trackId,@QueryParam("userId") String userId) throws URISyntaxException, SQLException {
 	    	
@@ -137,9 +137,9 @@ public class UserList {
 				}
 				LOGGER.info("Time Stamp       =======>  "+ts+"   and Login status ===========>"+loginStatus);
 				if(calculateTimeDiff(ts) > 20) {
-					 ui = new URI("http://141.148.33.87:8080/timeout.html");
+					 ui = new URI("http://150.136.116.225:30994/timeout.html");
 				} else {
-					 ui = new URI("http://141.148.33.87:8080/userList.html");
+					 ui = new URI("http://150.136.116.225:30994/userList.html");
 				}
 			 }catch(Exception e) {
 				 e.printStackTrace();
