@@ -1,0 +1,48 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<html>
+<head>
+	<title>Registered User List</title>
+	<script type="text/javascript" src="userList.js"></script>
+	    
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+  ></script>
+<script src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.min.js"
+   ></script>
+   <script src="https://cdn.datatables.net/1.12.0/js/dataTables.jqueryui.min.js"
+   ></script>
+    <script src="https://cdn.datatables.net/scroller/2.0.6/js/dataTables.scroller.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/dataTables.jqueryui.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.6/css/scroller.jqueryui.min.css
+" />
+
+<style>
+body {
+  background-image: url('water1.jpg');
+}
+</style>
+
+</head>
+<body  onload="loadTable()">
+	<div class="container text-center" >
+		<h3>Registered User List</h3>
+	</div>
+	<table id="example" class="display nowrap" style="width:100%">
+        <thead>
+            <tr>
+                <th id="id">User ID</th>
+                <th id="firstName">First Name</th>
+                <th id="lastName">Last Name</th>
+                <th id="email">Email</th>
+                <th id="phone">Phone</th>
+                <th id="createdDate">TimeStamp</th>
+            </tr>
+        </thead>
+        <tbody>
+		</tbody>
+    </table>
+	
+	
+</body>
+</html>

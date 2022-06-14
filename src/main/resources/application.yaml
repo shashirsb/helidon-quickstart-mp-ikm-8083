@@ -1,0 +1,41 @@
+#
+# Copyright (c) 2019, 2020 Oracle and/or its affiliates.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# server:
+#   port: 8080
+#   host: 0.0.0.0
+#   static.classpath.location: /public
+#   static.classpath.welcome: login.html
+  
+# app.name: Helidon-MP-USER-LOGIN_POC
+# app.uri: https://www.example.com
+
+my.property: propertyValue
+
+metrics.rest-request.enabled: true
+
+javax.sql.DataSource.orders:
+ dataSourceClassName: oracle.jdbc.pool.OracleDataSource
+ dataSource.url: jdbc:oracle:thin:@helidonpoc_medium?TNS_ADMIN=Wallet_HELIDONPOC
+ dataSource.user: Admin
+ dataSource.password: PriyaRam@2903!
+
+# tracing:
+#   # required
+#   service: "helidon-mp-user-login-poc"
+#   # default is "localhost"
+#   host: "localhost"
+#   # default is 9411
+#   port: 9411
